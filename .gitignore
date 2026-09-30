@@ -2,4 +2,6 @@ app
 *.o
 output.log
 trace.log
-
+*.bak
+broken_*.log
+threadfuncs.c
