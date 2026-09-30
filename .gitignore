@@ -1,0 +1,5 @@
+app
+*.o
+output.log
+trace.log
+
