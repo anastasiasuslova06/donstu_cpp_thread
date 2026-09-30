@@ -1,0 +1,14 @@
+main: pid = 10522, opened file: 'output.log'
+[tag = T0] pid = 10522 ppid = 4981 tid = 10523 std::thread::id = 130818628384448 iter = 0
+[tag = T1] pid = 10522 ppid = 4981 tid = 10524 std::thread::id = 130818619991744 iter = 0
+[tag = T2] pid = 10522 ppid = 4981 tid = 10525 std::thread::id = 130818611599040 iter = 0
+[tag = T3] pid = 10522 ppid = 4981 tid = 10526 std::thread::id = 130818603206336 iter = 0
+[tag = T0] pid = 10522 ppid = 4981 tid = 10523 std::thread::id = 130818628384448 iter = 1
+[tag = T1] pid = 10522 ppid = 4981 tid = 10524 std::thread::id = 130818619991744 iter = 1
+[tag = T2] pid = 10522 ppid = 4981 tid = 10525 std::thread::id = 130818611599040 iter = 1
+[tag = T3] pid = 10522 ppid = 4981 tid = 10526 std::thread::id = 130818603206336 iter = 1
+[tag = T1] pid = 10522 ppid = 4981 tid = 10524 std::thread::id = 130818619991744 iter = 2
+[tag = T0] pid = 10522 ppid = 4981 tid = 10523 std::thread::id = 130818628384448 iter = 2
+[tag = T2] pid = 10522 ppid = 4981 tid = 10525 std::thread::id = 130818611599040 iter = 2
+[tag = T3] pid = 10522 ppid = 4981 tid = 10526 std::thread::id = 130818603206336 iter = 2
+main: all threads finished, file closed

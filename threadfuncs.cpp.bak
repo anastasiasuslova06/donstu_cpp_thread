@@ -39,14 +39,13 @@ void about() {
     std::cout << "std::thread example\n";
 }
 
-void funcThread(const ThreadArgs& args, Logger& logger,
-                std::promise<std::string> result) {
-    // 100000 инкрементов (задание 20)
+void funcThread(const ThreadArgs& args, Logger& logger) {
+    // 100000 инкрементов на поток — один раз (задание 20)
     for (int k = 0; k < 100000; ++k) {
         ++counter;
     }
 
-    // цикл логирования (задание 12)
+    // основной цикл логирования
     for (int i = 0; i < COUNT_ITERATIONS; ++i) {
         std::ostringstream oss;
         oss << "[tag = " << args.tag
@@ -57,12 +56,7 @@ void funcThread(const ThreadArgs& args, Logger& logger,
             << " iter = " << i;
         logger.writeLine(oss.str());
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    }
-
-    // формируем результат и передаём через promise
-    std::ostringstream res;
-    res << args.tag << ": " << COUNT_ITERATIONS << " iterations done";
-    result.set_value(res.str());
-}        // imitation of useful work
+        // imitation of useful work
 //        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+}
